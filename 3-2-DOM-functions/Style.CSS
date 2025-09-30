@@ -1,0 +1,53 @@
+:root{ 
+    --color-white:#ffffff;
+}
+html{
+    font-size: 16px;
+    height: 100px;
+}
+Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        a{
+            color: var(--color-white);
+            text-decoration: none;
+            border: 1px solid;
+            border-radius: 2em;
+            padding: 0.4 rem;
+        }
+    }
+}
+
+main{
+    flex-grow: 1;
+}
+
+#brand{
+    font-size: 1.5em;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #1cd761;
+    padding: 0 10%;
+    min-height: 100px;
+}
+.Pictures{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    gap: 10px;
+}
+footer{
+    display: flex;
+    
+}

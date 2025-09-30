@@ -1,0 +1,11 @@
+#destinations{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+
+}
+
+.visit{
+    color: red;
+}

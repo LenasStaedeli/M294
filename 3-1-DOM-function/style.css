@@ -1,0 +1,9 @@
+#football{
+    height: 480px;
+    width: 1000px;
+    background-color: green;
+    margin-top: 4px;
+}
+body{
+    margin: 0;
+}
