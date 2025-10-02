@@ -3,3 +3,4 @@ ghq <git link>
 
 
 Seitentitel sind nicht h1
+const ... = document.queryselector(input[name=forenam]).value

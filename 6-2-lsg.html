@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password confirmation</title>
+        <style>
+            label, input, button {
+                display: block;
+            }
+
+            input:user-valid {
+                border: 1px solid green;
+            }
+
+            input:user-invalid {
+                border: 1px solid red;
+            }
+        </style>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                // const formEl = document.querySelector("form");
+                // formEl.addEventListener("submit", (e) => {
+                //     e.preventDefault();
+                // })
+                const passwordEl = document.querySelector("input[name=password]");
+                //const passwordEl = document.querySelector("#input-password");
+                //const passwordEl = document.getElementById("input-password");
+
+                const passwordConfirmationEl = document.querySelector("input[name=password-confirmation]");
+
+                passwordConfirmationEl.addEventListener("input", () => {
+                    if(passwordEl.value !== passwordConfirmationEl.value) {
+                        passwordConfirmationEl.setCustomValidity("Passwords need to match");
+                    }else{
+                        passwordConfirmationEl.setCustomValidity("");
+                    }
+                })
+            })
+        </script>
+    </head>
+
+    <body>
+        <form>
+            <label for="input-forename">Forename</label>
+            <input type="text" name="forename" id="input-forename" required>
+            <label for="input-surname">Surname</label>
+            <input type="text" name="surname" id="input-surname">
+            <label for="input-email">Email</label>
+            <input type="email" name="email" id="input-email">
+            <label for="input-password">Password</label>
+            <input type="password" name="password" id="input-password" required>
+            <label for="input-password-confirmation">Password confirmation</label>
+            <input type="password" name="password-confirmation" id="input-password-confirmation" required>
+            <label for="input-tos">Terms of service</label>
+            <input type="checkbox" name="tos" id="input-tos">
+            <button type="submit">Register</button>
+        </form>
+    </body>
+
+</html>
