@@ -4,3 +4,36 @@ ghq <git link>
 
 Seitentitel sind nicht h1
 const ... = document.queryselector(input[name=forenam]).value
+
+
+Dom:
+document.queryselector("ul :nth-of-type(3) li:")
+...:nth-of-type(3) für das dritte Element der der Klasse oder Attributs
+document.query...().child um Child des Elements bekommen
+getElemementsByID/ClassName/AttributName
+document.querySelector("#uno").onclick= Count;
+
+API
+fetch(API, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            title: title,
+            body: body
+        })
+
+find: const entry = places.find((p) => p.zipcode === zipEl.value); 
+Durchsuche den Arry places nach einem ein element dass gleich ist wie das eingegeben.
+const Token = response.headers.get("Authorization")  Für Token       
+
+
+Begriffe:
+Lightbox: Um Bilder oder andere Inhalte hervorzuheben. Wenn man auf ein Bild drückt wird der bg bspw. abgedunkelt und das Bild vergrössert
+Modale Dialog: Ein POP-UP welches den User daran hindert sein vorhaben auf der Website weiter zu führen
+bspw. Cookies oder ein alert
+Searchbar / Autocomplete: Wird etwas eingegeben gibt es manchmal Autocomplete dies bedeutet dass die Webseite entweder guesst was eingegeben wird weil dies bspw. oft eingegeben wurde
+oder dass sie alle weiterführenden möglichkeiten die es mit dieser eingabe gibt anzeigt        
+
+
